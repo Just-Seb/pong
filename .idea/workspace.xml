@@ -4,6 +4,8 @@
     <list default="true" id="5cea2df8-a6b4-45d4-839e-cd109671cdc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_menue.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_menue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong_zero.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_zero.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +142,7 @@
       <updated>1573251912650</updated>
       <workItem from="1573251913769" duration="7169000" />
       <workItem from="1573268375097" duration="28310000" />
-      <workItem from="1573361109613" duration="4422000" />
+      <workItem from="1573361109613" duration="5010000" />
     </task>
     <task id="LOCAL-00001" summary="daily">
       <created>1573424502723</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573424502724</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="daily">
+      <created>1573425064733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573425064733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

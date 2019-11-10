@@ -55,9 +55,7 @@ clock = pygame.time.Clock()
 
 carryOn = True
 carryOn_menue = True
-carryOn_pause = True
 carryOn0 = True
-carryOn1 = True
 carryOn2 = True
 
 welcome = "Welcome To 4 Player Pong!"
@@ -257,36 +255,5 @@ def check_loser():
             move_array_first_half[i] = 0
             move_array_second_half[i] = 0
             loser_array[i] = True
-
-    return
-
-
-def pause():
-
-    global carryOn_pause
-
-    for event in pygame.event.get():
-
-        if event.type == pygame.KEYDOWN:
-
-            if event.key == pygame.K_p:
-
-                while carryOn_pause:
-
-                    for event in pygame.event.get():
-
-                        if event.type == pygame.KEYDOWN:
-
-                            if event.key == pygame.K_p:
-
-                                carryOn_pause = False
-
-                    font = pygame.font.Font(None, 70)
-                    text = font.render("Paused", 1, WHITE)
-                    screen.blit(text, (200, 200))
-
-                    pygame.display.flip()
-
-    carryOn_pause = True
 
     return

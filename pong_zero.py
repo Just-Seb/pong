@@ -1,4 +1,5 @@
-import pong_functions, main_menue
+import main_menue
+import pong_functions
 
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -42,28 +43,6 @@ while pong_functions.carryOn_menue:
 
     pong_functions.clock.tick(60)
 
-
-while pong_functions.carryOn1:
-
-    for event in pong_functions.pygame.event.get():
-
-        if event.type == pong_functions.pygame.KEYDOWN:
-
-            if event.key == pong_functions.pygame.K_KP_ENTER:
-
-                pong_functions.carryOn1 = False
-
-    pong_functions.screen.fill(BLACK)
-
-    pong_functions.all_sprites_list.draw(pong_functions.screen)
-
-    pong_functions.display_controls()
-
-    pong_functions.pygame.display.flip()
-
-    pong_functions.clock.tick(60)
-
-
 while pong_functions.carryOn:
 
     for event in pong_functions.pygame.event.get():
@@ -77,8 +56,6 @@ while pong_functions.carryOn:
             if event.key == pong_functions.pygame.K_x:
 
                 pong_functions.carryOn = False
-
-    pong_functions.pause()
 
     pong_functions.move_paddles()
 

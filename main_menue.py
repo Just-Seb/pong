@@ -6,7 +6,12 @@ WHITE = (255, 255, 255)
 pong_functions.screen.fill(BLACK)
 
 
+carryOn_pause = True
+
+
 def show_menue():
+
+    global carryOn_pause
 
     pong_functions.screen.fill(BLACK)
 
@@ -50,14 +55,15 @@ def show_menue():
 
         if event.type == pong_functions.pygame.KEYDOWN and event.key == pong_functions.pygame.K_v:
 
-            while pong_functions.carryOn1:
+            while carryOn_pause:
 
                 for event in pong_functions.pygame.event.get():
 
                     if event.type == pong_functions.pygame.KEYDOWN:
 
-                        if event.key == pong_functions.pygame.K_KP_ENTER:
-                            pong_functions.carryOn1 = False
+                        if event.key == pong_functions.pygame.K_ESCAPE:
+
+                            carryOn_pause = False
 
                 pong_functions.screen.fill(BLACK)
 
@@ -68,5 +74,7 @@ def show_menue():
                 pong_functions.pygame.display.flip()
 
                 pong_functions.clock.tick(60)
+
+    carryOn_pause = True
 
     return
