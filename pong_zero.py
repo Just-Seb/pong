@@ -67,11 +67,18 @@ while pong_functions.carryOn1:
 while pong_functions.carryOn:
 
     for event in pong_functions.pygame.event.get():
+
         if event.type == pong_functions.pygame.QUIT:
+
             pong_functions.carryOn = False
+
         elif event.type == pong_functions.pygame.KEYDOWN:
+
             if event.key == pong_functions.pygame.K_x:
+
                 pong_functions.carryOn = False
+
+    pong_functions.pause()
 
     pong_functions.move_paddles()
 

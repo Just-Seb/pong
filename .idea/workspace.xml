@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cea2df8-a6b4-45d4-839e-cd109671cdc8" name="Default Changelist" comment="" />
+    <list default="true" id="5cea2df8-a6b4-45d4-839e-cd109671cdc8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_menue.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_menue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong_zero.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_zero.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +27,13 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TLutbKsCF5DExNsXbiDVBVIdn4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,11 +142,23 @@
       <updated>1573251912650</updated>
       <workItem from="1573251913769" duration="7169000" />
       <workItem from="1573268375097" duration="28310000" />
+      <workItem from="1573361109613" duration="3820000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pong$info_gatherer.coverage" NAME="info_gatherer Coverage Results" MODIFIED="1573286135882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
