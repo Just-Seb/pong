@@ -24,7 +24,7 @@ def show_menue():
 
     font = pong_functions.pygame.font.Font(None, 60)
     text = font.render(">", 1, WHITE)
-    pong_functions.screen.blit(text, (400, 292))
+    pong_functions.screen.blit(text, (400, 92))
 
     font = pong_functions.pygame.font.Font(None, 45)
     text = font.render("Lives:", 1, WHITE)
@@ -37,5 +37,36 @@ def show_menue():
     font = pong_functions.pygame.font.Font(None, 60)
     text = font.render(">", 1, WHITE)
     pong_functions.screen.blit(text, (400, 292))
+
+    font = pong_functions.pygame.font.Font(None, 65)
+    text = font.render("Enter", 1, WHITE)
+    pong_functions.screen.blit(text, (250, 500))
+
+    font = pong_functions.pygame.font.Font(None, 30)
+    text = font.render("(press v to see layout)", 1, WHITE)
+    pong_functions.screen.blit(text, (400, 600))
+
+    for event in pong_functions.pygame.event.get():
+
+        if event.type == pong_functions.pygame.KEYDOWN and event.key == pong_functions.pygame.K_v:
+
+            while pong_functions.carryOn1:
+
+                for event in pong_functions.pygame.event.get():
+
+                    if event.type == pong_functions.pygame.KEYDOWN:
+
+                        if event.key == pong_functions.pygame.K_KP_ENTER:
+                            pong_functions.carryOn1 = False
+
+                pong_functions.screen.fill(BLACK)
+
+                pong_functions.all_sprites_list.draw(pong_functions.screen)
+
+                pong_functions.display_controls()
+
+                pong_functions.pygame.display.flip()
+
+                pong_functions.clock.tick(60)
 
     return
