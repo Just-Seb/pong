@@ -5,6 +5,14 @@ WHITE = (255, 255, 255)
 
 carryOn_pause = True
 
+area_players_plus = pong_functions.pygame.Rect(400, 92, 30, 30)
+
+area_players_minus = pong_functions.pygame.Rect(200, 92, 30, 30)
+
+area_points_plus = pong_functions.pygame.Rect(400, 292, 30, 30)
+
+area_points_minus = pong_functions.pygame.Rect(200, 292, 30, 30)
+
 
 def show_menue():
 
@@ -71,6 +79,26 @@ def show_menue():
                 pong_functions.pygame.display.flip()
 
                 pong_functions.clock.tick(60)
+
+        if event.type == pong_functions.pygame.MOUSEBUTTONDOWN:
+
+            if event.button == 1:
+
+                if area_players_plus.collidepoint(event.pos):
+
+                    pong_functions.number_of_players += 1
+
+                if area_players_minus.collidepoint(event.pos):
+
+                    pong_functions.number_of_players -= 1
+
+                if area_points_plus.collidepoint(event.pos):
+
+                    pong_functions.starting_points += 1
+
+                if area_points_minus.collidepoint(event.pos):
+
+                    pong_functions.starting_points -= 1
 
     carryOn_pause = True
 

@@ -15,8 +15,6 @@ pygame.display.set_caption("Pong")
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
-number_of_players = 4
-
 ### Sprite Creation Start ###
 
 paddle1 = Paddle(WHITE, 10, 100)
@@ -50,6 +48,8 @@ all_sprites_list.add(ball)
 ### Sprite Creation End ###
 
 ### Global Variables Start ###
+
+number_of_players = 4
 
 starting_points = 10
 

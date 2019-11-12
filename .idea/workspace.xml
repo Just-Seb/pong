@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cea2df8-a6b4-45d4-839e-cd109671cdc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/variables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_menue.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_menue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pong_zero.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_zero.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +142,7 @@
       <workItem from="1573251913769" duration="7169000" />
       <workItem from="1573268375097" duration="28310000" />
       <workItem from="1573361109613" duration="8468000" />
-      <workItem from="1573539242037" duration="5028000" />
+      <workItem from="1573539242037" duration="6816000" />
     </task>
     <task id="LOCAL-00001" summary="daily">
       <created>1573424502723</created>
@@ -167,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573425653927</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="daily">
+      <created>1573600214823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573600214823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
