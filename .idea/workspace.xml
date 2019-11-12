@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cea2df8-a6b4-45d4-839e-cd109671cdc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/variables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_menue.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_menue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pong_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pong_functions.py" afterDir="false" />
@@ -142,7 +143,8 @@
       <updated>1573251912650</updated>
       <workItem from="1573251913769" duration="7169000" />
       <workItem from="1573268375097" duration="28310000" />
-      <workItem from="1573361109613" duration="5010000" />
+      <workItem from="1573361109613" duration="8468000" />
+      <workItem from="1573539242037" duration="5028000" />
     </task>
     <task id="LOCAL-00001" summary="daily">
       <created>1573424502723</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573425064733</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="daily">
+      <created>1573425653927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573425653927</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +178,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

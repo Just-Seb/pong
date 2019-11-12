@@ -1,4 +1,5 @@
 import pygame
+import main_menue
 from paddle import Paddle
 from ball import Ball
 
@@ -6,6 +7,7 @@ from ball import Ball
 pygame.init()
 
 size = (700, 700)
+
 screen = pygame.display.set_mode(size)
 
 pygame.display.set_caption("Pong")
@@ -22,7 +24,7 @@ paddle1.rect.x = 20
 paddle1.rect.y = 200
 
 paddle2 = Paddle(WHITE, 10, 100)
-paddle2.rect.x = 670
+paddle2.rect.x = 680
 paddle2.rect.y = 200
 
 paddle3 = Paddle(WHITE, 100, 10)
@@ -31,7 +33,7 @@ paddle3.rect.y = 20
 
 paddle4 = Paddle(WHITE, 100, 10)
 paddle4.rect.x = 200
-paddle4.rect.y = 670
+paddle4.rect.y = 680
 
 ball = Ball(WHITE, 10, 10)
 ball.rect.x = 345
@@ -53,11 +55,6 @@ starting_points = 10
 
 clock = pygame.time.Clock()
 
-carryOn = True
-carryOn_menue = True
-carryOn0 = True
-carryOn2 = True
-
 welcome = "Welcome To 4 Player Pong!"
 welcome2 = "(Press Enter To Continue)"
 welcome3 = "(Press Enter To Start Playing)"
@@ -73,6 +70,11 @@ for j in range(len(paddle_array)):
 move_array_first_half = [pygame.K_w, pygame.K_i, pygame.K_3, pygame.K_RIGHT]
 move_array_second_half = [pygame.K_s, pygame.K_k, pygame.K_1, pygame.K_LEFT]
 number_array = [1, 2, 3, 4]
+
+carryOn = True
+carryOn_menue = True
+carryOn0 = True
+carryOn2 = True
 
 winner = "No One Wins :("
 
@@ -257,3 +259,118 @@ def check_loser():
             loser_array[i] = True
 
     return
+
+
+def game():
+
+    global carryOn, carryOn_menue, carryOn2
+
+    while carryOn_menue:
+
+        for event in pygame.event.get():
+
+            if event.type == pygame.QUIT:
+
+                carryOn_menue = False
+
+            elif event.type == pygame.KEYDOWN:
+
+                if event.key == pygame.K_KP_ENTER:
+
+                    carryOn_menue = False
+
+        main_menue.show_menue()
+
+        pygame.display.flip()
+
+        clock.tick(60)
+
+    while carryOn:
+
+        for event in pygame.event.get():
+
+            if event.type == pygame.QUIT:
+
+                carryOn = False
+
+            elif event.type == pygame.KEYDOWN:
+
+                if event.key == pygame.K_x:
+
+                    carryOn = False
+
+        move_paddles()
+
+        all_sprites_list.update()
+
+        check_score()
+
+        screen.fill(BLACK)
+
+        all_sprites_list.draw(screen)
+
+        display_scores()
+
+        check_loser()
+
+        check_for_winner()
+
+        pygame.display.flip()
+
+        clock.tick(60)
+
+    while carryOn2:
+
+        display_winner()
+
+        for event in pygame.event.get():
+
+            if event.type == pygame.KEYDOWN:
+
+                if event.key == pygame.K_x:
+
+                    carryOn2 = False
+
+                elif event.key == pygame.K_r:
+
+                    spacer()
+
+        pygame.display.flip()
+
+        clock.tick(60)
+
+    pygame.quit()
+
+
+def spacer():
+
+    global carryOn, carryOn_menue, carryOn0, carryOn2
+
+    carryOn = True
+    carryOn_menue = True
+    carryOn0 = True
+    carryOn2 = True
+
+    game()
+
+    return
+
+
+while carryOn0:
+
+    for event in pygame.event.get():
+
+        if event.type == pygame.KEYDOWN:
+
+            if event.key == pygame.K_KP_ENTER:
+
+                carryOn0 = False
+
+    display_welcome()
+
+    pygame.display.flip()
+
+    clock.tick(60)
+
+
+game()
