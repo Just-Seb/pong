@@ -39,10 +39,6 @@ ball.rect.y = 195
 
 all_sprites_list = pygame.sprite.Group()
 
-all_sprites_list.add(paddle1)
-all_sprites_list.add(paddle2)
-all_sprites_list.add(paddle3)
-all_sprites_list.add(paddle4)
 all_sprites_list.add(ball)
 
 ### Sprite Creation End ###
@@ -53,6 +49,7 @@ number_of_players = 4
 
 starting_points = 10
 
+paddle_start = "paddle"
 clock = pygame.time.Clock()
 
 welcome = "Welcome To 4 Player Pong!"
@@ -60,12 +57,9 @@ welcome2 = "(Press Enter To Continue)"
 welcome3 = "(Press Enter To Start Playing)"
 
 loser_array = [False, False, False, False]
-paddle_array = [paddle1, paddle2, paddle3, paddle4]
+
 score_array = []
-
-for j in range(len(paddle_array)):
-
-    score_array.append(starting_points)
+paddle_array = []
 
 move_array_first_half = [pygame.K_w, pygame.K_i, pygame.K_3, pygame.K_RIGHT]
 move_array_second_half = [pygame.K_s, pygame.K_k, pygame.K_1, pygame.K_LEFT]
@@ -285,7 +279,23 @@ def game():
 
         clock.tick(60)
 
+    for i in range(0, number_of_players):
+
+        new_paddle = paddle_start + str(i)
+
+        paddle_array.append(new_paddle)
+
+    for i in range(len(paddle_array)):
+
+        all_sprites_list.add(paddle_array[i])
+
     while carryOn:
+
+        global score_array
+
+        for j in range(len(paddle_array)):
+
+            score_array.append(starting_points)
 
         for event in pygame.event.get():
 

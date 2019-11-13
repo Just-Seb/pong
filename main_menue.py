@@ -28,11 +28,13 @@ def show_menue():
     text = font.render("Players:", 1, WHITE)
     pong_functions.screen.blit(text, (50, 100))
 
+    text = font.render(str(pong_functions.number_of_players), 1, WHITE)
+    pong_functions.screen.blit(text, (250, 100))
+
     font = pong_functions.pygame.font.Font(None, 60)
     text = font.render("<", 1, WHITE)
     pong_functions.screen.blit(text, (200, 92))
 
-    font = pong_functions.pygame.font.Font(None, 60)
     text = font.render(">", 1, WHITE)
     pong_functions.screen.blit(text, (400, 92))
 
@@ -40,11 +42,13 @@ def show_menue():
     text = font.render("Lives:", 1, WHITE)
     pong_functions.screen.blit(text, (50, 300))
 
+    text = font.render(str(pong_functions.starting_points), 1, WHITE)
+    pong_functions.screen.blit(text, (250, 300))
+
     font = pong_functions.pygame.font.Font(None, 60)
     text = font.render("<", 1, WHITE)
     pong_functions.screen.blit(text, (200, 292))
 
-    font = pong_functions.pygame.font.Font(None, 60)
     text = font.render(">", 1, WHITE)
     pong_functions.screen.blit(text, (400, 292))
 
@@ -88,9 +92,17 @@ def show_menue():
 
                     pong_functions.number_of_players += 1
 
+                    if pong_functions.starting_points == 4:
+
+                        pong_functions.starting_points = 4
+
                 if area_players_minus.collidepoint(event.pos):
 
                     pong_functions.number_of_players -= 1
+
+                    if pong_functions.number_of_players == 0:
+
+                        pong_functions.number_of_players = 0
 
                 if area_points_plus.collidepoint(event.pos):
 
@@ -99,6 +111,10 @@ def show_menue():
                 if area_points_minus.collidepoint(event.pos):
 
                     pong_functions.starting_points -= 1
+
+                    if pong_functions.starting_points == 0:
+
+                        pong_functions.starting_points = 0
 
     carryOn_pause = True
 
